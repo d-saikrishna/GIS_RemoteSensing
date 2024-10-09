@@ -1,10 +1,13 @@
-# Damagundam Forest Canopy Density
+# Damagundam Forest Canopy Density (FCD)
+
+Author: [Sai Krishna Dammalapati](https://d-saikrishna.github.io/)
+<hr>
 
 [Damagundam Reserve Forest](https://maps.app.goo.gl/WeMjbBzgtSwFhztp8) is about 80 km from the city of Hyderabad near Pudur Village, Rangareddy District, Telangana.
 
 About 1185 hectares (2900 acres) of the Damagundam forest land is allowed to be diverted to setup a VLF Radar Station/Naval Base.
 
-This GIS project is to assist the [SaveDamagundam Forest](https://www.change.org/p/save-12-lakh-trees-from-radar-project-threatening-2-900-acres-of-damagundam-reserve-forest) group in measuring the deforestation that happened in Damagundam over the last decade (2014-23).
+This GIS project is to assist the [SaveDamagundam Forest](https://www.instagram.com/savedamagundamforest/) group in measuring the deforestation that happened in Damagundam over the last decade (2014-23).
 
 ## Data
 All satellite imagery are from [LANDSAT8 Surface Reflectance](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2#description) products from Google Earth.
@@ -37,13 +40,7 @@ Following indices are building blocks of FCD calculation.
 3. Shadow Index (SI)
 4. Thermal Index (TI)
 
-$ AVI = \sqrt[3]{NIR*(1 - RED)*(NIR-RED)}$
-
-$ BSI = \frac{(SWIR + RED)-(NIR + BLUE)}{(SWIR + RED)+(NIR + BLUE)} $
-
-$ SI = \sqrt[3]{(1 - RED)*(1-BLUE)*(1-GREEN)}$
-
-$ TI$ is the surface temperature band value.
+![alt text](literature/formulae1.png)
 
 All these individual indices are also presented in the repository. 
 `results\indices_tifs\`
@@ -57,7 +54,7 @@ Both VD and SSI are normalised using min-max normalisation to get their values i
 
 FCD is then calculated using the formula:
 
-$ FCD = \sqrt{(VD * SSI) +1}  - 1$ 
+![alt text](literature/formulae2.png)
 
 The value of FCD ranges form 0-1.
 
@@ -73,11 +70,13 @@ Forest Type is then calculated using the following classification:
 # Results
 ![Forest Types](results/ForestTypes_3snaps.png)
 
-Compared to 2014, the scrub forest type has increased from 16% t0 37% (in 2019) and 45% (in 2023). Corresponding reduction in the open forest type is observed.
+Compared to 2014, the scrub forest type has increased from 16% to 37% (in 2019) and 45% (in 2023). Corresponding reduction in the open forest type is observed.
 
 This method of FCD calculation did not find any dense and very dense forest in the Damagundam forest area. This has to be ground-truthed.
 
 More forest degradation can be observed in the central part of the forest area -- near Thirmalapur and Somangurthy villages.
+
+High res images can be found in the `results` folder.
 
 ![Damagundam FCD comparison](results/Damagundam.png)
 
