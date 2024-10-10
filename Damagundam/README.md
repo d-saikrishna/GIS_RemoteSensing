@@ -1,6 +1,6 @@
 # Damagundam Forest Canopy Density (FCD)
 
-Author: [Sai Krishna Dammalapati](https://d-saikrishna.github.io/)
+Author: [Sai Krishna Dammalapati](https://d-saikrishna.github.io/) | GitHub Repo: [Link](https://github.com/d-saikrishna/GIS_RemoteSensing/tree/master/Damagundam)
 <hr>
 
 [Damagundam Reserve Forest](https://maps.app.goo.gl/WeMjbBzgtSwFhztp8) is about 80 km from the city of Hyderabad near Pudur Village, Rangareddy District, Telangana.
@@ -26,8 +26,8 @@ FCD is calculated over once composite image generated for years 2014, 2019 and 2
 In the Telangana State, October-December are relatively cloud-free areas. So, a mean composite image is generated based on images in these months. It is also post the monsoons, so I assume it to be the greenest part of the forest.
 
 
-Damagundam forest polygons are obtained from field groups.
-`data\shapefiles\ForestArea_Damagundam.shp`
+Damagundam forest polygons are obtained from field groups: 
+[Link](https://github.com/d-saikrishna/GIS_RemoteSensing/tree/master/Damagundam/data/shapefiles/ForestArea_Damagundam.shp)
 
 ## Method
 
@@ -76,7 +76,7 @@ This method of FCD calculation did not find any dense and very dense forest in t
 
 More forest degradation can be observed in the central part of the forest area -- near Thirmalapur and Somangurthy villages.
 
-High res images can be found in the `results` folder.
+High res images can be found in the [results](https://github.com/d-saikrishna/GIS_RemoteSensing/tree/master/Damagundam/results) folder.
 
 ![Damagundam FCD comparison](results/Damagundam.png)
 
