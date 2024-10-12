@@ -56,29 +56,29 @@ FCD is then calculated using the formula:
 
 ![alt text](literature/formulae2.png)
 
-The value of FCD ranges form 0-1.
+The value of FCD ranges form 0-100.
 
 Forest Type is then calculated using the following classification:
 
 | FCD Range    | Forest Type |
 | -------- | ------- |
-| 0 - 0.1  | Scrub    |
-| 0.1 - 0.4 | Open     |
-| 0.4 - 0.7    | Dense    |
-| 0.7 - 1    | Very Dense    |
+| 0 - 10  | Scrub    |
+| 10 - 40 | Open     |
+| 40 - 70    | Dense    |
+| 70 - 100    | Very Dense    |
 
 # Results
 ![Forest Types](results/ForestTypes_3snaps.png)
 
-Compared to 2014, the scrub forest type has increased from 16% to 37% (in 2019) and 45% (in 2023). Corresponding reduction in the open forest type is observed.
-
-This method of FCD calculation did not find any dense and very dense forest in the Damagundam forest area. This has to be ground-truthed.
+Compared to 2014, the `Open` forest type has increased from 9% to 30% (in 2019) and 25% (in 2023). Corresponding reduction in the `Dense` forest type is observed.
 
 More forest degradation can be observed in the central part of the forest area -- near Thirmalapur and Somangurthy villages.
 
 High res images can be found in the [results](https://github.com/d-saikrishna/GIS_RemoteSensing/tree/master/Damagundam/results) folder.
 
 ![Damagundam FCD comparison](results/Damagundam.png)
+
+*This method of FCD calculation does not match with field data in Dense forest classification. This has to be ground-truthed and adjusted accordingly. \
 
 ## References:
 1. [FCD Formulae](https://erepo.uef.fi/bitstream/123456789/21667/1/urn_nbn_fi_uef-20190739.pdf)
