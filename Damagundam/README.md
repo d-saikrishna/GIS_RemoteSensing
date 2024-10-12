@@ -31,7 +31,7 @@ Damagundam forest polygons are obtained from field groups:
 
 ## Method
 
-I calculate the Forest Canopy Density (FCD) over the Damagundam Forest area for years 2014, 2019 and 2023. This Google Earth Engine Code will help in replicating the method - [Link](https://code.earthengine.google.com/c4975926ea5ae6f56bcf6c911723aaeb)
+I calculate the Forest Canopy Density (FCD) over the Damagundam Forest area for years 2014, 2019 and 2023. This Google Earth Engine Code will help in replicating the method - [Link](https://code.earthengine.google.com/627f7a58c07ac79e1a2e4d9b76834702)
 
 Following indices are building blocks of FCD calculation.
 
